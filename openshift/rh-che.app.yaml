@@ -167,6 +167,11 @@ objects:
               configMapKeyRef:
                 key: workspaces-pvc-storage-size
                 name: rhche
+          - name: CHE_INFRA_KUBERNETES_RUNTIMES__CONSISTENCY__CHECK__PERIOD__MIN
+            valueFrom:
+              configMapKeyRef:
+                key: runtimes-consistency-check-period-min
+                name: rhche
           - name: CHE_INFRA_KUBERNETES_PVC_STRATEGY
             valueFrom:
               configMapKeyRef:
